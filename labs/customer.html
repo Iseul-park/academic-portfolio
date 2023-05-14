@@ -1,0 +1,183 @@
+<!--
+Name: Iseul Park 041057779
+Date: Feb 2, 2023
+Section: CST 8285 section 300
+Lab: lab 02 (lab section 301) 
+File: customer.html
+Lab objective: This is the cutstomer.html page for my portfolio of 
+web development work. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>customer</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Iseul Park">
+    <meta name="description" content="customer page for lab 2">
+    <meta name="keywords" content="customer,regstration,form">
+  </head>
+
+  <body>
+    <h1>Customer Registration</h1>
+    <form action="process.php" method="get" enctype="text/plain">
+      <fieldset>
+        <legend>1.User info</legend>
+
+        <table >
+          <tr>
+            <td>
+              <label for="fna">First Name</label><br>
+              <input type="text" id="fna" name="firstname" maxlength="10"><br><br>
+            </td>
+            <td>
+              <label for="lna">Last Name</label><br>
+              <input type="text" id="lna" name="lastname" value="Park" readonly><br><br>
+            </td>
+          </tr> 
+        
+          <tr>
+            <td colspan="2">
+              <label for="ema"> Email </label><br>
+              <input
+                type="email"
+                name="email"
+                id="ema"
+                size="50"
+                placeholder="format for email is xxx@yyy.zzz"
+              ><br><br>
+            </td>          
+          </tr>
+
+          <tr>
+            <td>
+              <label for="pwd">Passward</label><br>
+              <input
+                type="password"
+                name="secret"
+                id="pwd"
+                size="15"
+                maxlength="15"
+                placeholder="at least 8 characters"
+              ><br>
+            </td>
+            <td>
+              <label for="pwds">Passward Repeat</label><br>
+              <input
+                type="password"
+                name="repeat"
+                id="pwds"
+                size="15"
+                maxlength="15"
+                placeholder="at least 8 characters"
+              ><br>
+            </td>
+          </tr>
+        </table>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>2.Location</legend>
+
+        <table>
+          <tr>
+            <td colspan="3">
+              <label for="adds">Address</label><br>   
+              <input 
+                type="text" 
+                id="adds" 
+                name="addresss"
+                size="50"
+              ><br><br>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="city" >City</label><br>
+              <input type="text" id="city" name="city"><br><br>
+            </td>
+            <td>
+              <label for="sta" >State</label><br>
+              <input type="text" id="sta" name="State" size="7"><br><br>
+            </td>
+            <td>
+              <label for="zip" >Zip</label><br>
+              <input type="text" id="zip" name="zip" size="7"><br><br>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <label for="phone">Phone </label><br>
+              <input
+                type="text"
+                name="phone"
+                id="phone"                    
+                placeholder="NNN-NNN-NNNN"
+              ><br><br>
+            </td>
+            <td colspan="2">
+              <label for="country">Country</label><br>
+              <select id="country" name="country" size="1">
+                <option value="canada" selected>Canada</option>
+                <option value="europe">Europe</option>
+                <option value="korea">Korea</option>
+                <option value="america">America</option>
+                <option value="russia">Russia</option>                 
+              </select><br><br>
+            </td>
+          </tr>
+        </table>
+
+        <label>Continent</label><br>
+        <input type="radio" id="na" name="continent" value="North America">
+        <label for="na">North America</label><br>
+    
+        <input type="radio" id="uro" name="continent" value="Europe">
+        <label for="uro">Europe</label><br>
+    
+        <input type="radio" id="sa" name="continent" value="South America">
+        <label for="sa">South America</label><br><br>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>3.Personal Details</legend>
+  
+        <table>
+          <tr>
+            <td>
+              <label for="cc1"> Birth Day </label><br>
+              <input type="date" id="cc1" name="appt-date" ><br><br>
+            </td>
+            <td>
+              <label for="cc2"> Favorite color </label><br>
+              <input
+                type="color"
+                name="f-color"
+                id="cc2"
+                value="#F7B6F5"
+              ><br><br>
+            </td>
+          </tr>
+  
+          <tr>
+            <td colspan="2">
+              <label for="cc3"> Interest In Art </label>
+              <p>Minimal <input type="range" id="cc3" name="age"> Love it!</p>
+            </td>
+          </tr>        
+        </table>  
+      </fieldset>
+
+      <h2> 4.All Done </h2>
+      <input type="checkbox" id="terms" name="terms" value="yes">
+      <label for="terms"> I agree to the <a href="http://termsofthesite.com"> Terms of the site </a></label><br><br>
+  
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+  
+      <p>2023 Copyright</p>   
+    </form>
+  </body>
+</html>

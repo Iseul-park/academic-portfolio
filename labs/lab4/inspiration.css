@@ -1,0 +1,49 @@
+/*
+Name: Iseul Park 041057779
+Date: Mar 8, 2023
+Section: CST 8285 section 300
+Lab: lab 03 (lab section 301) 
+File: inspiration.css
+Lab objective: This is the inspiration.css for my portfolio of Lab 4. 
+*/
+
+*{
+  background-color: antiquewhite;
+}
+
+body {
+  font-family: Helvetica,'Roboto', sans-serif;
+}
+
+#quote-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+#quote-text {
+  font-size: 22px;
+  border: 4px solid #333;
+  border-radius: 15pt;
+  background-color: #84b3a4;
+  padding: 20px;
+  margin: 20px; 
+}
+
+#quote-author{
+  font-size: 22px;
+  font-style: italic;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+}
+
+#quote-btn {
+  font-family: sans-serif;
+  font-size: 18px;
+  border: 2px solid #333;
+  border-radius: 15pt;
+  background-color: ivory;
+  margin-left: 45%;
+  padding: 10px 30px 10px 30px; 
+}

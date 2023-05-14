@@ -1,0 +1,169 @@
+<!--This is the course.html page for my portfolio -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Iseul Park">
+  <meta name="description" content="course page">
+  <meta name="keywords" content="cst8285,course">
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- CSS link -->
+  <script src="course.js" defer></script> <!-- JS link for javascript -->
+  <title>Iseul's Portfolio</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="menu"> <!-- Navigation Bar -->
+      <ul>
+        <li><a href="index.html">About</a></li> <!-- Home page Link-->
+        <li><a href="resume.html">Resume</a></li> <!-- Resume page Link-->
+        <li><a href="project.html">Projects</a></li> <!-- Project page Link-->
+        <li><a href="course.html">Courses</a></li> <!-- Course page Link-->
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="big-container"> <!-- The container including all courses -->
+      <h1 class="title">My courses</h1>
+
+      <!-- The container including all courses -->
+      <input type="text" id="searchBar" onkeyup="search()" placeholder="Search for names.." title="Type in a name">
+      <!-- The dropdown menu for filtering courses based on level -->
+      <select id="filterLevel">  
+        <option value="">All level</option>
+        <option value="1">Level 1</option>
+        <option value="2">Level 2</option>
+      </select>
+      <!-- The dropdown menu for filtering courses based on level -->
+      <button onclick="filter()">Filter</button>
+      <!-- The button to activate sorting based on level -->
+      <button id="sortButton" onclick="sortTable()">Sort by level</button>
+  
+      <div class="grid-container" id="myGrid"> <!--The container for grid items -->
+        <div class="course-header"> <!--The headears for course information -->
+          <div class="grid-header">Image</div>
+          <div class="grid-header">Title</div>
+          <div class="grid-header">Level</div>
+          <div class="grid-header">Code</div>
+          <div class="grid-header">Description</div>
+        </div>
+        <!--The courses for level 1-->
+        <div class="course">
+          <img src="images/essencial.JPG" alt="Computer Essentials">
+          <div class="course-title">Computer Essentials</div>
+          <div class="course-level">1</div>
+          <div class="course-code">CST8101</div>
+          <div class="course-description">An introduction to the fundamental concepts of computer technology.</div>
+        </div>
+    
+        <div class="course">
+          <img src="images/java.JPG" alt="Introduction to Computer Programming">
+          <div class="course-title">Introduction to Computer Programming</div>
+          <div class="course-level">1</div>
+          <div class="course-code">CST8116</div>
+          <div class="course-description">A beginner's guide to computer programming, teaching the basics of coding and algorithms.</div>
+        </div>
+        
+        <div class="course">
+          <img src="images/db.JPG" alt="Database">
+          <div class="course-title">Introduction to Database</div>
+          <div class="course-level">1</div>
+          <div class="course-code">CST8215</div>
+          <div class="course-description">An introduction to Database covers the basics of database design, management, and querying.</div>
+        </div>
+        
+        <div class="course">
+          <img src="images/success.JPG" alt="Achieving Success">
+          <div class="course-title">Achieving Success in Changing Environments</div>
+          <div class="course-level">1</div>
+          <div class="course-code">CST8300</div>
+          <div class="course-description">A course that focuses on developing skills for success in an ever-changing work environment, such as time management and problem solving.</div>
+        </div>
+      
+        <div class="course">
+          <img src="images/communication.JPG" alt="Communications I">
+          <div class="course-title">Communications I</div>
+          <div class="course-level">1</div>
+          <div class="course-code">ENL1813T</div>
+          <div class="course-description">An English course that focuses on improving writing and oral communication skills.</div>
+        </div>
+        
+        <div class="course">
+          <img src="images/math.JPG" alt="Mathematics">
+          <div class="course-title">Technical Mathematics</div>
+          <div class="course-level">1</div>
+          <div class="course-code">MAT8001C</div>
+          <div class="course-description">Technical Mathematics for Computer Science covers the mathematical concepts and techniques required for computer science and engineering.</div>
+        </div>
+    
+        <!--The courses for level 2-->
+        <div class="course">
+          <img src="images/db.JPG" alt="Database">
+          <div class="course-title">Database Systems</div>
+          <div class="course-level">2</div>
+          <div class="course-code">CST2355</div>
+          <div class="course-description">An advanced course that covers the design and implementation of database systems.</div>
+        </div>
+    
+        <div class="course">
+          <img src="images/linux.JPG" alt="GNU/Linux">
+          <div class="course-title">Operating System Fundamentals (GNU/Linux)</div>
+          <div class="course-level">2</div>
+          <div class="course-code">CST8102</div>
+          <div class="course-description">A course that teaches students about the basics of operating systems, with a focus on the GNU/Linux operating system.</div>
+        </div>
+      
+        <div class="course">
+          <img src="images/java.JPG" alt="Object Oriented Programming">
+          <div class="course-title">Object Oriented Programming (Java)</div>
+          <div class="course-level">2</div>
+          <div class="course-code">CST8284</div>
+          <div class="course-description">The basics of object-oriented programming using the Java programming language.</div>
+        </div>
+      
+        <div class="course">
+          <img src="images/wp.JPG" alt="Web Programming">
+          <div class="course-title">Web Programming</div>
+          <div class="course-level">2</div>
+          <div class="course-code">CST8285</div>
+          <div class="course-description">A course that teaches students how to design, build, and maintain websites using technologies like HTML, CSS, and JavaScript.</div>
+        </div>
+      
+        <div class="course">
+          <img src="images/tech.JPG" alt="Technical Communication">
+          <div class="course-title">Technical Communication for Engineering Technologies</div>
+          <div class="course-level">2</div>
+          <div class="course-code">ENL2019T</div>
+          <div class="course-description">A course that focuses on developing effective technical communication skills for use in the engineering and technology fields.</div>
+        </div>
+      
+        <div class="course">
+          <img src="images/myth.JPG" alt="Greek Mythology">
+          <div class="course-title">Greek Mythology</div>
+          <div class="course-level">2</div>
+          <div class="course-code">GED5005</div>
+          <div class="course-description">A course that explores the myths and legends of ancient Greece.</div>
+        </div>
+      
+        <div class="course">
+          <img src="images/coop.JPG" alt="Cooperative Education Readiness">
+          <div class="course-title">Cooperative Education Readiness</div>
+          <div class="course-level">2</div>
+          <div class="course-code">GED1001</div>
+          <div class="course-description">A course that prepares students for co-op work experiences, including how to find and apply for co-op opportunities and how to succeed in a co-op work placement.</div>
+        </div>
+  
+      </div>
+    </div>
+  </main>
+
+  <footer> <!-- Footer bar -->
+    <nav><a href="#header">Top of Page</a></nav>
+    <p>Copyright &copy; Iseul Park 2023</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!-- This is the resume.html page for my portfolio -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Iseul Park">
+  <meta name="description" content="Resume page">
+  <meta name="keywords" content="project,portfolio"">
+  <!-- CSS Bootstrap link for cards-->
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- CSS link -->
+  <script src="plugins/jquery-2.2.4.min.js" defer></script>
+  <script src="plugins/jquery.appear.min.js" defer></script>
+  <script src="plugins/jquery.easypiechart.min.js" defer></script> 
+  <script src="charts.js" defer></script> 
+  <title>Iseul's Portfolio</title>
+</head>
+<body>
+
+  <header id = "header">
+    <nav class ="menu"> <!-- Navigation Bar -->
+      <ul>
+        <li><a href="index.html">About</a></li> <!-- Home page Link-->
+        <li><a href="resume.html">Resume</a></li> <!-- Resume page Link-->
+        <li><a href="project.html">Projects</a></li> <!-- Project page Link-->
+        <li><a href="course.html">Courses</a></li> <!-- Course page Link-->
+      </ul>
+    </nav>
+  </header>  
+
+  <main>    
+
+
+    <div class="big-container"> <!-- Card container for my projects -->
+      <div class ="goal"> <!-- Objectives Description -->
+        <h1 class="title">Objectives</h1> 
+        <ul>
+          <li><b>Improve my coding skills:</b> learn new programming languages, frameworks, and tools, and practice coding every day.</li>
+          <li><b>Build a portfolio of projects:</b> demonstrate my skills and experience to showcase my work to potential employers and clients.</li>
+          <li><b>Collaborate with other developers:</b> participate in coding meetups, conferences to meet other developers and work on projects together.</li>
+        </ul>    
+      </div>
+
+      <div class ="education"> <!-- Education Description -->
+        <h1 class="title">Education</h1>
+        <ul>
+          <li>Computer Programmer | Algonquin College, Ottawa, ON | 2022 - Present</li>
+          <li>National Institute for Lifelong Education (South Korea) - Child Study Credit Bank System | 2017-2018</li>
+          <li>Bachelor of International Trade & Chinese | Guemgang University (South Korea) | 2009-2013</li>
+        </ul>
+      </div>
+
+      <div class ="skill"> <!-- Skill Description -->
+        <h1 class="title">Skills</h1>
+        <div class="b-skills"> <!-- Skill charts -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="skill-item center-block">
+                  <div class="chart-container">
+                    <div class="chart " data-percent="80" data-bar-color="#23afe3">
+                      <span class="percent" data-after="%">80</span>
+                    </div>
+                  </div>
+                  <p>Java</p>
+                </div>
+              </div>
+      
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="skill-item center-block">
+                  <div class="chart-container">
+                    <div class="chart " data-percent="85" data-bar-color="#a7d212">
+                      <span class="percent" data-after="%">85</span>
+                    </div>
+                  </div>
+                  <p>HTML</p>
+                </div>
+              </div>
+      
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="skill-item center-block">
+                  <div class="chart-container">
+                    <div class="chart " data-percent="90" data-bar-color="#ff4241">
+                      <span class="percent" data-after="%">90</span>
+                    </div>
+                  </div>
+                  <p>CSS</p>
+                </div>
+              </div>
+      
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="skill-item center-block">
+                  <div class="chart-container">
+                    <div class="chart " data-percent="75" data-bar-color="#edc214">
+                      <span class="percent" data-after="%">75</span>
+                    </div>
+                  </div>
+                  <p>JavaScript</p>
+                </div>
+              </div>
+      
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="skill-item center-block">
+                  <div class="chart-container">
+                    <div class="chart " data-percent="80" data-bar-color="#23afe3">
+                      <span class="percent" data-after="%">70</span>
+                    </div>
+                  </div>
+                  <p>PHP</p>
+                </div>
+              </div>
+      
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="skill-item center-block">
+                  <div class="chart-container">
+                    <div class="chart " data-percent="75" data-bar-color="#edc214">
+                      <span class="percent" data-after="%">75</span>
+                    </div>
+                  </div>
+                  <p>MySQL</p>
+                </div>
+              </div>
+            </div>
+          </div>      
+
+        <ul>
+          <li>Proficient in programming languages: Java, SQL, Bash script</li>
+          <li>Experience with JavaFX, JUnit, OOP with Design Patterns</li>
+          <li>Knowledge of various databases including: MySQL, Oracle, SQL Server, MS Access, PostgreSQL</li>
+          <li>Familiar with web programming languages: HTML, CSS, PHP, JavaScript</li>
+          <li>Knowledgeable in Business Intelligence (BI), Git, VMware, Apache</li>
+          <li>Operating System expertise: Windows, Linux</li>
+        </ul>
+      </div>
+
+      <div class ="experience"> <!-- Experience Description -->
+        <h1 class="title">Experience</h1>
+        <ul>
+          <li>Early Childhood Educator | Rainbow Centre | 2021-2022</li>
+          <li>Early Childhood Educator | Creative Discovery Children's Centre | 2019-2021</li>
+          <li>Sales Representative | Costco (South Korea) | 2018-2019</li>
+          <li>Store Manager | Visual Line Company | 2017-2018</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer> <!-- Footer bar -->
+    <nav><a href="#header">Top of Page</a></nav>
+    <p>Copyright &copy; Iseul Park 2023</p>
+  </footer>
+
+</body>
+</html>

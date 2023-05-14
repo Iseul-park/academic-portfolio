@@ -1,0 +1,351 @@
+/* This is the style.css file for all my pages' style */
+
+/* Reset the default of all elements */
+*{  
+  margin:0;
+  padding:0;
+  box-sizing: inherit;
+}
+
+/* Set default margin for the body element */
+body {
+  margin: 0%;
+}
+
+.index-page{
+  background-color: #003300;
+}
+/* Style for the main element */
+main {
+  text-align: center;
+  margin: 0px 100px 20px 100px;
+}
+
+/* header navigation bar */
+.menu * {
+  display: inline; /* Set the menu item inline */
+}
+
+.menu {
+  font-size: 20px;
+  font-family: fantasy, Arial, sans-serif;
+  font-style: italic;
+  text-align: center; 
+  padding-top: 30px;
+  height: 60px;
+  background-color: #003300;
+}
+.menu li {
+  margin: 35px; 
+}
+
+.menu li a {
+  color:white;
+  text-decoration: none; /* Remove the anchor of the list items */
+}
+
+.menu ul {
+  padding-left: 0px;
+} 
+
+/* Home(index) page */
+
+/* Styles for the image box */
+.image-box {
+  display: flex; /* Display images with flex layout  */
+  flex-direction: row; /* Set the direction in flex items horizontally */
+  flex-wrap: wrap; /* Wrap items onto multiple lines */
+  padding: 0 0px;
+  justify-content:center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Styles for individual images in the image box */
+.item {
+  width: 50%; /* Set the width of each image */
+  object-fit:cover; /* Scale the image to fill the available space in its container */
+  width:296px;
+  height: 200px;
+}
+
+img {
+  animation: none; /* Set no animation to images by default */
+  transition: .5s; /* Set the transition effect for images to 0.5 seconds */
+}
+
+/* Style for images on hover */
+img:hover {
+  animation: colorHue 1s infinite alternate; /* Set the animation for images when hovered */
+  transform: translateY(-10px);  /* Move the image upward by 10 pixels on the vertical axis */
+}
+
+/* Keyframes for the color hue animation */
+@keyframes colorHue {
+  from {
+    filter: hue-rotate(0deg); /* Set the starting color of the animation */
+  }
+  to {
+    filter: hue-rotate(100deg); /* Set the ending color of the animation */
+  }  
+}
+
+/* Styles for the container element on the home page */
+.container {
+  text-align: center;
+  font-family:  Arial, sans-serif;;
+  line-height: 1.0;
+  font-style: italic;
+}
+
+/* Styles for the test with animation */
+.container h1 {
+  color: #537171;
+  font-style: italic;
+  font-family: fantasy;
+  text-transform: uppercase; /* Transform the text to uppercase */
+  font-size: 60px;
+  text-align: center;
+}
+
+.container h2 {
+  margin-top: 10px;
+  color: #537171;
+  font-style: italic;
+  font-family: fantasy;
+  font-size: 50px;
+  text-align: center;
+}
+/* Styles for the paragraghs in the container */
+.intext {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  margin-top: 35px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  color:white;
+  line-height: 1.5; /* Set height for each line */
+}
+
+.space {
+  margin: 20px; /* Set margins for new paragragh */
+} 
+
+/* Contact */
+
+#contact {
+  margin-bottom: 50px;
+}
+
+.icons {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.icons a {
+  display: inline-block;
+  margin-right: 20px;
+  color: white;
+}
+
+.icons a:hover {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+
+/* Resume page */
+
+/* skill graghs */
+.container2 {
+  margin-bottom: 20px;
+}
+
+.skill-item {
+	position: relative;
+	max-width: 200px;
+	margin-bottom: 20px;
+	color: #555;
+}
+
+.chart-container {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
+	margin-bottom: 27px;
+}
+
+.skill-item .chart,
+.skill-item .chart canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.skill-item .chart:before {
+	content: "";
+	width: 0;
+	height: 100%;
+}
+
+.skill-item .chart:before,
+.skill-item .percent {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.skill-item .percent{
+	position: relative;
+	line-height: 1;
+	font-size: 40px;
+	font-weight: 900;
+	z-index: 2;
+}
+
+.skill-item  .percent:after {
+	content: attr(data-after);
+	font-size: 20px;
+}
+
+p{
+  font-weight: 900;
+}
+
+
+/* Styles for the container for cards and courses*/
+.big-container {
+  margin: 0;
+  line-height: 1.5;
+  background-color:white;
+  padding: 30px;
+}
+
+.card {
+  width: 100%; /* Set width for ech cards*/
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: bold;
+} 
+
+/* Styles for the title headers */
+.title {
+  color: #003300;
+  font-family: fantasy, Arial, sans-serif;
+  text-transform: uppercase; /* Chane the text to uppercase */
+  text-align: left;
+  font-size: 40px;
+  padding: 20px;
+}
+
+/* Styles for lists of the each title*/
+main ul li{
+  font-family: Arial, sans-serif;;
+  font-size: 15pt;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+
+/* Course page*/
+
+#searchBar {
+  background-position: 10px 10px; 
+  background-repeat: no-repeat; /* prevents the background image from repeating */
+  width: 70%; /* sets the width of the search bar */
+  font-size: 16px; 
+  padding: 12px 30px 12px 40px; 
+  border: 1px solid #ddd; 
+  margin-bottom: 20px; 
+  margin-right: 20px; 
+}
+
+/* Styles for filter for level */
+#filterLevel, button {
+  border:1px solid #ddd;
+  border-radius: 15px; /* sets the border radius of the filter level and button */
+  padding: 5px 10px;
+}
+
+button:hover {
+  background-color:antiquewhite;
+}
+
+#sortButton{
+  margin-left: 15px;
+}
+
+/* Styles for the grid container */
+#myGrid {
+  border-collapse: collapse; /* sets the border-collapse property to collapse */
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Styles for headers of grid and items of course */
+#myGrid .grid-header, #myGrid .course {
+  text-align: center;
+  padding: 12px;
+}
+
+#myGrid .course-header {
+  display: grid; /* sets the display property to grid */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* adjust the number of columns here */
+  grid-auto-rows:  minmax(50px, 1fr);; /* adjust the height of rows here */
+  grid-gap: 0px; /* sets the gap between the grid cells */
+}
+
+#myGrid .course {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* adjust the number of columns here */
+  grid-auto-rows: minmax(100px, 1fr); /* adjust the height of rows here */
+  grid-gap: 0px; /* sets the gap between the grid cells */
+  border-bottom: 1px solid #ddd;
+  justify-items: center; /* horizontally centers all grid items */
+  align-items: center; /* vertically centers all grid items */
+}
+
+#myGrid .grid-header, #myGrid .grid-container:hover, #myGrid .course:hover {
+  background-color: #f1f1f1;
+}
+
+#myGrid img {
+  width: 100px;
+  height: 130px;
+}
+
+/* Styles for the footer bar */
+footer {
+  background-color: #537171;
+  font-size: 15px;
+  font-style: italic;
+  align-items: center ;
+  text-align: center ;
+  padding-top: 10px;
+}
+
+/* Navigation for the top of page */
+footer nav a {
+  font-family: fantasy, Arial, sans-serif;
+  text-decoration: none;
+  color: black;
+  text-align:center;
+}
+
+/* Copyright section */
+footer p {
+  font-size: 10pt;
+  font-style: italic;
+  text-align: right;
+  padding-top: 0px;
+  margin: 0;
+}
